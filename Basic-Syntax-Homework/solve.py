@@ -1,1 +1,1 @@
-evens = [num for num in range(1,300) if num % 2 == 1]
+evens = [num for num in range(1,300) if num % 2 == 0]
