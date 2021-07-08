@@ -1,10 +1,15 @@
 
 #1
-with open("student_names.txt","w") as f :
+
+with open("student_names.txt") as f :
 	content = f.read()
-	f.write("Random but not so random")
+
 
 #2
+with open("student_names.txt","w") as f :
+	f.write("Random but not so random")
+
+#3
 content = ""
 with open("student_names.txt") as f :
 	n = 10 
@@ -12,7 +17,7 @@ with open("student_names.txt") as f :
 		content += f.readline()
 
 
-#3
+#4
 
 content = ""
 with open("student_names.txt") as f :
@@ -21,14 +26,14 @@ with open("student_names.txt") as f :
 		content += line
 
 
-#4
+#5
 
 with open("student_names.txt") as f :
 	x = "word"
 	print(x in f.read())
 
 
-#5
+#6
 
 chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
